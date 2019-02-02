@@ -14,7 +14,7 @@ h1{
 
  .container {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: auto;
   position: relative;
 
@@ -22,8 +22,8 @@ h1{
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 500px;
+  width: 500px;
   border: 10px solid black;
   border-radius: 20%;
 }
