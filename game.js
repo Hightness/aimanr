@@ -25,7 +25,7 @@ $(".btn").click(function (){
   if(seq[cont]!==$(this).attr("id")){
     anim($(this).attr("id"));
     lvl=0;
-    $("h1").text("Hai perso, premi qualsiasi pulsante per rigiocare..");
+    $("h1").text("Hai perso, premi qui per rigiocare..");
     via=true;
     seq=[];
     cont=0;
@@ -48,7 +48,7 @@ $(".btn").click(function (){
 });
 
 
-$(document).keypress(function (){
+$("h1").click(function (){
   if (via===true){
   $("h1").text("Level 0");
   rand();
