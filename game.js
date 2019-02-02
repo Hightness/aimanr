@@ -25,7 +25,9 @@ $(".btn").click(function (){
   if(seq[cont]!==$(this).attr("id")){
     anim($(this).attr("id"));
     lvl=0;
-    $("h1").text("Hai perso, premi qui per rigiocare..");
+    $("h1").text("Hai perso .. :)");
+    $("h2").removeClass("nascondi");
+
     via=true;
     seq=[];
     cont=0;
@@ -48,30 +50,13 @@ $(".btn").click(function (){
 });
 
 
-$("h1").click(function (){
+$("span").click(function (){
   if (via===true){
+    $("h2").addClass("nascondi");
   $("h1").text("Level 0");
-  rand();
+  setTimeout(function (){
+    rand();
+  },250);
   via=false;
 }
 });//serve per ricominciare o iniziare
-
-
-
-
-
-
-
-
-
-
-
-
-//versione mini:
-//var sr=['red','green','yellow','blue'],seq=[],cont=0,lvl=0,via=!0;function playsound(c){new Audio("sounds/"+c+".mp3").play()}
-//function rand(){var n=Math.floor(Math.random()*4);seq.push(sr[n]);$("#"+sr[n]).fadeOut(50).fadeIn(50);playsound(sr[n])}
-//function perso(){$('body').addClass("game-over");setTimeout(function(){$('body').removeClass("game-over")},200)}
-//function anim(colore){$('#'+colore).addClass("pressed");setTimeout(function(){$('#'+colore).removeClass("pressed")},250)}
-//$(".btn").click(function(){if(seq[cont]!==$(this).attr("id")){anim($(this).attr("id"));lvl=0;$("h1").text("Hai perso, premi qualsiasi pulsante per rigiocare..");via=!0;seq=[];cont=0;perso();new Audio("sounds/wrong.mp3").play()}
-//else{playsound($(this).attr("id"));$(this).fadeOut(50).fadeIn(50);cont++}
-//if((via===!1)&&(cont>lvl)){lvl++;cont=0;setTimeout(function(){rand();$("h1").text("Level "+lvl)},600)}});$(document).keypress(function(){if(via===!0){$("h1").text("Level 0");rand();via=!1}})

@@ -12,13 +12,13 @@ h1{
   color: #FEF2BF;
 }
 
-.container {
+ .container {
   display: block;
-  width: 50%;
+  width: 90%;
   margin: auto;
+  position: relative;
 
 }
-
 .btn {
   margin: 25px;
   display: inline-block;
@@ -30,10 +30,8 @@ h1{
 
 @media (max-width:1094px){
   .btn{
-    margin: 25px;
+    margin: 2%;
     display: inline-block;
-    height: 80px;
-    width: 80px;
     border: 10px solid black;
     border-radius: 20%;
   }
@@ -43,10 +41,8 @@ h1{
 }
 @media (max-width:650px){
   .btn{
-    margin: 25px;
+    margin:0;
     display: inline-block;
-    height: 50px;
-    width: 50px;
     border: 10px solid black;
     border-radius: 20%;
   }
@@ -78,4 +74,7 @@ h1{
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+.nascondi{
+  visibility: hidden;
 }
