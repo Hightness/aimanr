@@ -22,6 +22,7 @@ function anim(colore){
 }
 
 $(".btn").click(function (){
+  $("h2").addClass("nascondi");
   if(seq[cont]!==$(this).attr("id")){
     anim($(this).attr("id"));
     lvl=0;
@@ -52,7 +53,7 @@ $(".btn").click(function (){
 
 $("span").click(function (){
   if (via===true){
-    $("h2").addClass("nascondi");
+    $("h2").text("Ricorda la posizione nella quale i pulsanti appaiono.");
   $("h1").text("Level 0");
   setTimeout(function (){
     rand();
