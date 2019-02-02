@@ -1,15 +1,24 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #a0edf7;
 }
 h1{
   line-height: 1.5;
 }
+h2{
+  line-height: 1.5;
+}
+h3{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 5%;
+  color: #1eafed;
+}
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #074684;
 }
 
  .container {
@@ -22,8 +31,8 @@ h1{
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border: 10px solid black;
   border-radius: 20%;
 }
