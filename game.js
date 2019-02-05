@@ -38,7 +38,7 @@ $(".btn").click(function() {
     $("h2").addClass("nascondi");
     if (seq[cont] !== $(this).attr("id")) {
       anim($(this).attr("id"));
-      $("h1").text("Hai perso .. punteggio: " + (Number(lvl) + 1));
+      $("h1").html("<h1 id='level-title' style='color:red;'>Hai perso .. punteggio: " + (Number(lvl) + 1)+"</h1>");
       lvl = 0;
       $("h2").removeClass("nascondi");
       viapul = false;
