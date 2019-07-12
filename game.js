@@ -77,7 +77,7 @@ $("span").click(function() {
   if (via === true) {
     viapul = true;
     $("h2").addClass("nascondi");
-    $("h1").text("Level 0");
+    $("h1").text("Livelloh 0");
     setTimeout(function() {
       rand();
     }, 250);
