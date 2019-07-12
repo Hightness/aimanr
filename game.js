@@ -65,7 +65,7 @@ $(".btn").click(function() {
       viapul = false;
       setTimeout(function() {
         rand();
-        $("h1").html("<h1 id='level-title' style='color:"+colorArray[Math.floor(Math.random()*50)+1]+"'>Level " + lvl+"</h1>");
+        $("h1").html("<h1 id='level-title' style='color:"+colorArray[Math.floor(Math.random()*50)+1]+"'>Livello " + lvl+"</h1>");
         viapul = true;
       }, 600);
     }
