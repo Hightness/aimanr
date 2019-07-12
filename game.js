@@ -16,10 +16,11 @@ function playsound(c) {
 function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
-  seq.forEach(setTimeout(function (item){
+  seq.forEach(function (item){
+    setTimeout(1000);
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
-  },500));
+  });
 } //aggiunge un nuovo pulsante
 function perso() {
   $('body').addClass("game-over");
