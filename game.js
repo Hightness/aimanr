@@ -16,8 +16,10 @@ function playsound(c) {
 function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
-  $("#" + sr[n]).fadeOut(50).fadeIn(50);
-  playsound(sr[n]);
+  seq.foreach(function(item){
+    $("#" + item).fadeOut(50).fadeIn(50);
+    playsound(item);
+  })
 } //aggiunge un nuovo pulsante
 function perso() {
   $('body').addClass("game-over");
