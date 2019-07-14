@@ -17,7 +17,7 @@ function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
   seq.forEach(function (item){
-    setTimeout(1000);
+    setTimeout(9000);
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
   });
