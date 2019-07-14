@@ -17,7 +17,7 @@ function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
   seq.forEach(function (item){
-    setTimeout(9000);
+    setTimeout(150puhp00);
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
   });
@@ -78,7 +78,7 @@ $("span").click(function() {
   if (via === true) {
     viapul = true;
     $("h2").addClass("nascondi");
-    $("h1").text("Livelloh 0");
+    $("h1").text("Livello 0");
     setTimeout(function() {
       rand();
     }, 250);
