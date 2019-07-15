@@ -17,7 +17,7 @@ function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
   seq.forEach(function (item){
-    setTimeout(150puhp00);
+    setTimeout(15000);
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
   });
@@ -66,7 +66,7 @@ $(".btn").click(function() {
       viapul = false;
       setTimeout(function() {
         rand();
-        $("h1").html("<h1 id='level-title' style='color:"+colorArray[Math.floor(Math.random()*50)+1]+"'>Livello " + lvl+"</h1>");
+        $("h1").html("<h1 id='level-title' style='color:"+colorArray[Math.floor(Math.random()*50)+1]+"'>Livelllo " + lvl+"</h1>");
         viapul = true;
       }, 600);
     }
@@ -78,7 +78,7 @@ $("span").click(function() {
   if (via === true) {
     viapul = true;
     $("h2").addClass("nascondi");
-    $("h1").text("Livello 0");
+    $("h1").text("Livelllo 0");
     setTimeout(function() {
       rand();
     }, 250);
