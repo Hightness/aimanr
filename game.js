@@ -19,7 +19,7 @@ function rand() {
   seq.forEach(function (item){
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
-    sleep(400);
+    sleep(1);
   });
 } //aggiunge un nuovo pulsante
 function perso() {
