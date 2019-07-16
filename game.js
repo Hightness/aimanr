@@ -17,9 +17,9 @@ function rand() {
   var n = Math.floor(Math.random() * 4);
   seq.push(sr[n]);
   seq.forEach(function (item){
-    wait(400);
     $("#" + item).fadeOut(50).fadeIn(50);
     playsound(item);
+    wait(400);
   });
 } //aggiunge un nuovo pulsante
 function perso() {
